@@ -3,7 +3,6 @@ import scipy.stats as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-
 sns.set()
 
 
@@ -35,7 +34,7 @@ def rejection_sampling(iter=1000):
 if __name__ == '__main__':
     plt.plot(x, p(x))
     plt.plot(x, k*q(x))
-    plt.show()
 
     s = rejection_sampling(iter=100000)
     sns.distplot(s)
+    plt.show()
